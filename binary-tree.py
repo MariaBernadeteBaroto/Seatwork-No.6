@@ -56,7 +56,7 @@ class BinarySearchTreeNode:
         elements.append(self.data)
 
         if self.right: #visit right tree
-            elements += self.right.in_order_traversal
+            elements += self.right.in_order_traversal()
                 
         return elements 
 
@@ -75,6 +75,7 @@ if __name__=='__main__':
 
     print("UK is in the list? ", country_tree.search("UK"))
     print("Sweden is in the list? ", country_tree.search("Sweden"))
+    print(country_tree.in_order_traversal())
 
     numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     print("In order traversal gives this sorted list:",numbers_tree.in_order_traversal())
