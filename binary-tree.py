@@ -32,8 +32,14 @@ class BinarySearchTreeNode:
     def search(self, val):
         if self.data == val:
             return True
-            
-#value might be in left subtree
+
+        #value might be in left subtree
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+                
 #value might be in right subtree
 #Define in order traversal
 #visit left tree
