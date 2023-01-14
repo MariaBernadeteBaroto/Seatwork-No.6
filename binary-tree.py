@@ -9,7 +9,7 @@ class BinarySearchTreeNode:
         self.left = None
         self.right = None
 
-#Add a subtree(child)
+    #Add a subtree(child)
     def add_child(self, data):
         if data == self.data:
             return #if node already exist
@@ -27,11 +27,15 @@ class BinarySearchTreeNode:
                 self.right.add_child(data)
             else:
                 self.right = BinarySearchTreeNode(data)
-                
+
+    #define binary search
+    def search(self, val):
+        if self.data == val:
+            return True
+            
+#value might be in left subtree
+#value might be in right subtree
 #Define in order traversal
 #visit left tree
 #visit base node#visit right tree
-#define binary search
-#value might be in left subtree
-#value might be in right subtree
 
