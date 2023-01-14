@@ -21,7 +21,13 @@ class BinarySearchTreeNode:
             else:
                 self.left = BinarySearchTreeNode(data)
         
-#Add data in right subtree
+        #Add data in right subtree
+        else:
+            if self.right:
+                self.right.add_child(data)
+            else:
+                self.right = BinarySearchTreeNode(data)
+                
 #Define in order traversal
 #visit left tree
 #visit base node#visit right tree
