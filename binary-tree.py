@@ -79,3 +79,5 @@ if __name__=='__main__':
     numbers_tree = build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     print("In order traversal gives this sorted list:",numbers_tree.in_order_traversal())
 
+#Source:
+#https_://www.youtube.com/watch?v=lFq5mYUWEBk
