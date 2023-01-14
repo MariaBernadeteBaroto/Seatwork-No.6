@@ -13,8 +13,14 @@ class BinarySearchTreeNode:
     def add_child(self, data):
         if data == self.data:
             return #if node already exist
-            
-#Add data in left subtree
+
+        #Add data in left subtree
+        if data < self.data:
+            if self.left:
+                self.left.add_child(data)
+            else:
+                self.left = BinarySearchTreeNode(data)
+        
 #Add data in right subtree
 #Define in order traversal
 #visit left tree
