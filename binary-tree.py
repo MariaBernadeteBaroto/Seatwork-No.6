@@ -3,7 +3,14 @@
 #Pseudocode
 
 #Define binary tree node class
+class BinarySearchTreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
 #Add a subtree(child)
+
 #Add data in left subtree
 #Add data in right subtree
 #Define in order traversal
